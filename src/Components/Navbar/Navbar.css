@@ -1,0 +1,17 @@
+.nav-item{
+    padding: 0rem .75rem;
+}
+.nav-link{
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+.nav-link:hover{
+    color: var(--orange);
+}
+
+@media screen and (max-width:770px) {
+    .toggle{
+        margin-left: -60px;
+    }
+}

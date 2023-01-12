@@ -1,0 +1,47 @@
+.foot {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.f-content {
+    position: absolute;
+    gap: 1.5rem;
+    margin-top: 7rem;
+    color: white;
+}
+
+.f-content span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.f-icons {
+    display: flex;
+    gap: 2rem;
+}
+
+@media screen and (max-width:426px) {
+    .foot img{
+        height: 12rem;
+    }
+    .f-content span {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    .f-icons svg {
+        transform: scale(0.6);
+    }
+
+    .f-content {
+        margin-top: 4rem;
+        gap: 0rem;
+
+    }
+
+    .f-icons {
+
+        gap: 0rem;
+    }
+}

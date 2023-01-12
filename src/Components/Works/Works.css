@@ -1,0 +1,94 @@
+.works {
+    height: 55vh;
+}
+
+/* right  */
+
+.w-right {
+    position: relative;
+}
+
+.w-maincircle {
+    left: 0rem;
+    position: relative;
+    background: white;
+    width: 18rem;
+    height: 18rem;
+    border-radius: 100%;
+    box-shadow: var(--smboxShadow);
+    z-index: 9;
+}
+
+.w-maincircle>* {
+    position: absolute;
+}
+
+.w-seccircle:nth-child(2) {
+    left: -3rem;
+    top: 6rem;
+}
+
+.w-seccircle:nth-child(3) {
+    left: 6rem;
+    top: 15rem;
+}
+
+.w-seccircle:nth-child(4) {
+    top: 6rem;
+    left: 16rem;
+}
+
+.w-maincircle>:nth-child(1) {
+    top: -3rem;
+    left: 6rem;
+}
+
+.w-seccircle {
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+    border-radius: 100%;
+    border: 5px solid #ebebeb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+}
+
+.w-backcircle{
+    position: absolute;
+    height: 13rem;
+    width: 13rem;
+    border-radius: 100%;
+    
+}
+
+.blueCircle{
+    background: #1949b8;
+    left: 9rem;
+    top:0rem;
+}
+
+.yellowCircle{
+    background: #f5c32c;
+        left: -1rem;
+            top: 8rem;
+}
+
+@media screen and (max-width :770px) {
+    .works {
+            height: 90vh;
+        }
+    .w-right{
+        display: flex;
+        align-items: flex-start;
+        justify-content: start;
+        transform: scale(0.7);
+    }
+    .w-maincircle{
+        position: static;
+    }
+    .w-backcircle{
+        left: 8rem !important;
+    }
+}
